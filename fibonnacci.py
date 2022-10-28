@@ -1,7 +1,13 @@
-n=[0,1]
-def fibonnacci(n):
-    if n ==0 or n==1:
-        return 0 
-    return fibonnacci(n-1) + fibonnacci(n-2)
-    
-    
+nterms = 10
+n1, n2 = 0,1
+count = 0
+
+print("Fibonnacci sequence:")
+while count < nterms:
+    print(n1)
+    nth = n1 + n2
+    n1 = n2
+    n2 = nth
+    count +=1
+
+
